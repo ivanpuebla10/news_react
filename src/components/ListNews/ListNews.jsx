@@ -1,42 +1,28 @@
-import "./ListNews.css";
-import axios from "axios";
-import React, { useState, useEffect } from "react";
-
-
+import React, { useContext, useEffect } from "react";
+import { GlobalContext } from "../../context/GlobalState";
+import './ListNews.css'
 
 const ListNews = () => {
-  //inicializamos estado
-  const [menus, setMenus] = useState([]);
-  //funcion que hace la peticion axios y setea los menus
-  const getMenus = async () => {
-    try {
-      const response = await axios.get(
-        "https://restaurant-api-ejercicios.herokuapp.com/menus"
-      );
-      setMenus(response.data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-  //con useEffect cuando se monta el componente llama a la funcion de arriba
+  const { news, getNews } = useContext(GlobalContext);
   useEffect(() => {
-    getMenus();
+    getNews();
   }, []);
-  // variable que reccore los menus y me los devuelve de uno en uno
-  const menu = menus.map((menu) => {
+  const New = news.map((New) => {
+    console.log(New)
+    // New.title && New.abstract ? expr1 : expr2 
     return (
-      <div className="menu_container" key={menu._id}>
-        
-        <h2>{menu.name}</h2>
-        <h3>{menu.description}</h3>
-        <h3>{menu.pricing[0].priceString}</h3>
+      <div className="new" key={New.id}>
+        <h2>{New.title.toUpperCase()}</h2>
+        <h3>Section: {New.section}</h3>
+        <h4>Subsection: {New.subsection}</h4>
+        <p>{New.abstract}</p>
+        <img src={New.multimedia[1].url} /><br/>
+        <h4>{New.url}</h4>
+        <date>{New.created_date}</date>
       </div>
     );
   });
-  return <div className ="principal">
-    {/* <h1>OUR MENUS</h1> */}
-    {menu}
-    </div>;
+  return <div className="characters">{New}</div>;
 };
 
 export default ListNews;
