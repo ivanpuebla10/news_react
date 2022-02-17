@@ -1,0 +1,50 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: rgb(44, 66, 66);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* width: 100%; */
+}
+
+.header div span{
+    margin: 1em;
+}
+
+p a {
+    color:rgb(44, 66, 66);
+    font-weight: 700;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .header a:hover {
+      background-color: rgb(123, 139, 139);
+      height: 100%;
+      width: 100%;
+  }
+  
+  .menu {
+      display:none
+  }
+
+  
+@media only screen and (max-width: 500px){
+      .menu {
+        display:block;
+    }
+
+    .header a {
+        display: none;
+    }
+    
+    }
