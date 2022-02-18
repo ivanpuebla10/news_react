@@ -1,3 +1,5 @@
+@import '../../colors.scss';
+
 form{
     display: flex;
     flex-direction: column;
@@ -5,21 +7,21 @@ form{
     width: 50%;
     min-height: 25vh;
     margin: 1em;
-    background-color: rgb(44, 66, 66);
+    background-color: $principal_color;
     padding: 1em;
     border-radius: 1em;
     height: 60vh;
 }
 form input{
     all: unset;
-    background-color: rgb(187, 186, 186);
+    background-color: $news_background;
     padding: 1em;
     border-radius: 1em;
-    color: white;
+    color: black;
 }
 form button{
     all: unset;
-    background-color: rgb(69, 152, 155);
+    background-color: $button_background;
     padding: 1em;
     border-radius: 1em;
     color: white;

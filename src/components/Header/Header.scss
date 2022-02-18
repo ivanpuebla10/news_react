@@ -1,10 +1,12 @@
+@import '../../colors.scss';
+
 .header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     padding: 1em;
-    background-color: rgb(44, 66, 66);
+    background-color: $principal_color;
     color: white;
     font-size: 20px;
     font-weight: 700;
@@ -17,9 +19,11 @@
 }
 
 p a {
-    color:rgb(44, 66, 66);
+    color:$principal_color;
     font-weight: 700;
 }
+
+@import '../../colors.scss';
 
 .header a {
     color: white;
@@ -28,7 +32,7 @@ p a {
   }
   
   .header a:hover {
-      background-color: rgb(123, 139, 139);
+      background-color: $hover_background;
       height: 100%;
       width: 100%;
   }

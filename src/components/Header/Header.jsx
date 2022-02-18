@@ -1,12 +1,12 @@
-import "./Header.css";
+import "./Header.scss";
 import { Link } from "react-router-dom";
 
 
 const Header = () => {
   return (
     <div className="header">
-      <span>NEWS</span>
-      <span className="menu">Home</span>
+      <span>SPORTS</span>
+      <span className="menu">Menu</span>
       <span>
           <Link to="/">Home</Link>
       </span>
