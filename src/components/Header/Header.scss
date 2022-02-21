@@ -11,6 +11,7 @@
     font-size: 20px;
     font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.7;
 }
 
 .header div span{
@@ -38,10 +39,6 @@ p a {
       display:none
   }
 
-  .list_active {
-      height: 100%;
-  }
-
   
 @media only screen and (max-width: 500px){
     .header {
@@ -54,8 +51,24 @@ p a {
         cursor: pointer;
     }
 
-    .header a {
-        display: none;
+    .list {
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: $principal_color;
+        text-align: center;
+        padding-top: 60px;
+        z-index: 998;
+        transition: all 0.3s ease;
+    }
+    .list_active {
+        left: 0;
     }
 
     .btn {

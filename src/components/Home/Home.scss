@@ -1,7 +1,45 @@
+@import '../../colors.scss';
+
 .home_container {
     height: 100vh;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    background-image: url('http://images2.fanpop.com/images/photos/3800000/Football-not-Soccer-soccer-3870961-1200-563.jpg');
 }
 
+.title h1 {
+    color: white;
+    font-size: 10vh;
+    margin:20px
+}
+
+button {
+    border: 0;
+    height: 7vh;
+    border-radius: 100px;
+    background-color: $button_background;
+    font-size: 2.7vh;
+    font-weight: 700;
+    color:white;
+    margin: 60px;
+
+
+}
+// .suscription {
+//     animation-duration: 3s;
+//     animation-name: slidein;
+//     font-size: 20px;
+//   }
+  
+//   @keyframes slidein {
+//     from {
+//       margin-left: 100%;
+//       width: 300%
+//     }
+  
+//     to {
+//       margin-left: 0%;
+//       width: 100%;
+//     }
+//   }
