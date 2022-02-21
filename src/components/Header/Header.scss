@@ -11,7 +11,6 @@
     font-size: 20px;
     font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* width: 100%; */
 }
 
 .header div span{
@@ -22,8 +21,6 @@ p a {
     color:$principal_color;
     font-weight: 700;
 }
-
-@import '../../colors.scss';
 
 .header a {
     color: white;
@@ -37,18 +34,59 @@ p a {
       width: 100%;
   }
   
-  .menu {
+  .btn__burger {
       display:none
+  }
+
+  .list_active {
+      height: 100%;
   }
 
   
 @media only screen and (max-width: 500px){
-      .menu {
+    .header {
+        position:fixed;
+        width: 100%;
+    } 
+
+    .btn__burger {
         display:block;
+        cursor: pointer;
     }
 
     .header a {
         display: none;
     }
-    
+
+    .btn {
+        position: fixed;
+        top: 2rem;
+        right: 3rem;
+        &__burger {
+            &,
+            &::before,
+            &::after{
+            width: 2rem;
+            height: 6px;
+            background-color: white;
+            display: flex;
+        }
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+        }
+
+        &::before {
+            transform: translateY(
+                -12px
+            );
+        }
+        &::after {
+            transform: translateY(
+                12px
+            );
+        }
+        }
+    }
     }

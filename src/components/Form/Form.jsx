@@ -3,7 +3,7 @@ import "./Form.scss";
 import { useNavigate } from "react-router-dom";
 
 
-export const Form = () => {
+const Form = () => {
   let navigate = useNavigate();
   const [data, setData] = useState({
     title: "",
