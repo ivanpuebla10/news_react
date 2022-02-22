@@ -1,4 +1,4 @@
-# SPORTS Nespapper
+# SPORTS Newspapper
 This app was created with react.
 
 ## Technologies
@@ -20,7 +20,13 @@ You may also see any lint errors in the console.
 
 
 ### PC principal view
-![foto](./images/ordenador.png)
+![foto](./images/homepc.png)
+
+### Mobile phone principal view
+![foto](./images/homemobil.png)
+
+### Mobile phone principal view
+![foto](./images/newspc.png)
 
 ### Mobile phone principal view
 ![foto](./images/mobil.png)
@@ -30,5 +36,9 @@ You may also see any lint errors in the console.
 
 ### Mobile form view
 ![foto](./images/formmobil.png)
+
+### Responsive Menu
+![foto](./images/burger.png)
+
 
 

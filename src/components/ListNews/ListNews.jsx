@@ -4,7 +4,7 @@ import './ListNews.scss'
 function ListNews() {
   return (
     <div className="container">
-      <h1>Last News</h1>
+      <h1 className="title_news">Last News</h1>
       <Card />
     </div>
 
