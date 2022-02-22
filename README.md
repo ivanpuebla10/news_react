@@ -38,7 +38,7 @@ You may also see any lint errors in the console.
 ![foto](./images/formmobil.png)
 
 ### Responsive Menu
-![foto](./images/burger.png)
+![foto](./images/burguer.png)
 
 
 
