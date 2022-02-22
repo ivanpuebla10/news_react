@@ -11,12 +11,15 @@
 .title h1 {
     color: white;
     font-size: 15vh;
-    margin:20px
+    margin:20px 20px 0 20px
 }
 
-p {
+.phrase {
     color:white;
+    font-weight: 700px;
     font-size: 3vh;
+    margin: 0 20px;
+    text-align: right;
 }
 
 button {
